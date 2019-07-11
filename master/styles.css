@@ -1312,7 +1312,7 @@ a.icon__fill-div {
 
 .slider {
 	width: 100%;
-	max-width: 500px;
+	max-width: 540px;
 	height: 130px;
 	position: relative;
 	margin: 0 auto;
@@ -1329,13 +1329,8 @@ a.icon__fill-div {
 		}
 
 .slider__item.mod_ui5con {
-			background: url(18bd685a6885e8756eb3ad766ce5064c.png) 50% 50% no-repeat;
-			background-size: 410px 100px;
-			}
-
-.slider__item.mod_ui5-webcomponents {
-			background: url(370fdec2cd000839448d97eedaa83821.png) 50% 50% no-repeat;
-			background-size: 461px 80px;
+			background: url(5319ad88059085d3631f5f3978e871f8.png) 50% 50% no-repeat;
+			background-size: 533px 130px;
 			}
 
 .slider__item.state_invisible {
@@ -1348,45 +1343,6 @@ a.icon__fill-div {
 	.slider__item.mod_ui5-webcomponents{
 		background-size: 100%;
 		}
-}
-
-.sticker {
-	background: url(9e24bce1ca196e8057163f3b2f7f0013.png) 50% 50% no-repeat;
-	width: 200px;
-	height: 200px;
-	position: absolute;
-	top: 210px;
-
-}
-
-@media (max-width: 1440px) {
-	.sticker {
-		top: 160px;
-	}
-}
-
-@media (max-width: 1130px) {
-	.sticker {
-		display: block;
-		position: relative;
-		top: 10px;
-		margin: 0px auto;
-	}
-}
-
-@media (max-width: 767px) {
-	.sticker {
-		width: 175px;
-		height: 175px;
-		top: 20px;
-		background-size: 100%;
-	}
-}
-
-@media (max-width: 530px) {
-	.sticker {
-		top: 7px;
-	}
 }
 
 .list {
@@ -1633,12 +1589,6 @@ html.noscroll .list > .list__item {
 		}
 }
 
-@media (max-width: 1130px) {
-	.header__title {
-		margin-top: 50px;
-	}
-}
-
 @media (max-width: 980px) {
 	.header {
 		height: 465px;
@@ -1654,7 +1604,7 @@ html.noscroll .list > .list__item {
 
 @media (max-width: 767px) {
 	.header {
-		height: 435px;
+		height: 300px;
 		background-size: cover;
 		}
 	.header::before {
