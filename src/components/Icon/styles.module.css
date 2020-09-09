@@ -23,6 +23,21 @@
 		border-radius: calc(var(--icon-size) / 2);
 	}
 
+
+	&.background_black {
+		&::before {
+			border: 1px solid #000000;
+			background-color: #000000;
+		}
+	}
+
+	&.background_white {
+		&::before {
+			border: 1px solid #000000;
+			background-color: #ffffff;
+		}
+	}
+
 	& img {
 		width: calc(var(--icon-size) / 2);
 		height: calc(var(--icon-size) / 2);
@@ -34,6 +49,10 @@
 
 	&.size_120x120 {
 		--icon-size: 120px;
+	}
+
+	&.size_240x240 {
+		--icon-size: 240px;
 	}
 }
 

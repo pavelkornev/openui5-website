@@ -14,7 +14,23 @@
     &.justifyContent_spaceBetween {
         justify-content: space-between;
     }
+
+    &.justifyContent_spaceAround {
+        justify-content: space-around;
+    }
+
+    &.alignitems_stretch {
+        align-items: stretch;
+    }
+
 }
+
+.ListItem {
+    &.background_black {
+        background-color: #000000;
+    }
+}
+
 
 /* 1 columns */
 .List.column_1 {
@@ -22,6 +38,20 @@
 
     & .ListItem {
         margin-bottom: 25px;
+    }
+}
+
+/* 2 columns */
+.List.column_2 {
+    margin-bottom: calc(-1 * var(--default-margin-half));
+
+    & .ListItem {
+        flex-basis: 50%;
+        margin-bottom: var(--default-margin-half);
+
+        @media (max-width: env(--screen-breakpoint-568)) {
+            flex-basis: 100%;
+        }
     }
 }
 
