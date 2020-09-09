@@ -5,12 +5,13 @@ import styles from "./styles.module.css";
 import getCssModifiers from "../../utils/getCssModifiers";
 
 
-const Icon = ({ size, src, alt, style, imgStyle }) => {
+const Icon = ({ size, src, alt, style, imgStyle, background }) => {
     return (
         <div
             className={classnames(
                 styles.Icon,
-                styles[`size_${size}`]
+                styles[`size_${size}`],
+                background ? styles[`background_${background}`] : null
             )}
             style={style}
         >
@@ -24,6 +25,7 @@ Icon.defaultProps = {
     alt: null,
     style: null,
     imgStyle: null,
+    background: null
 };
 
 Icon.propTypes = {
@@ -31,6 +33,7 @@ Icon.propTypes = {
     alt: PropTypes.string,
     style: PropTypes.object,
     imgStyle: PropTypes.object,
+    background: PropTypes.oneOf(getCssModifiers(styles, "background")),
 };
 
 
