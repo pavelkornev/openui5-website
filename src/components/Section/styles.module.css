@@ -13,9 +13,6 @@
     .SectionContent.align_center {
         text-align: center;
         }
-    .SectionContent.padding_small {
-        padding: 20px 40px;
-        }
     .Section .Section__title {
         line-height: 1em;
         margin-bottom: 40px;
