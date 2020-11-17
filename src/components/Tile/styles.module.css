@@ -37,13 +37,6 @@
     }
 }
 
-/* type_event */
-.Tile.type_event {
-    & .TileDescription {
-        margin-top: 5px;
-    }
-}
-
 /* type_assert */
 .Tile.type_assert {
     height: 100%;
